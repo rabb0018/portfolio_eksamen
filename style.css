@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden;
+
 
 }
 
@@ -35,7 +35,9 @@ body {
 
 /*background: rgb(0, 44, 184);*/
 
-
+#body {
+     overflow: hidden;
+}
 
 nav {
     display: flex;
@@ -91,7 +93,7 @@ nav {
 
 .portfolio_tekst {
 
-    margin-top: 10rem;
+    margin-top: 5rem;
 
 }
 
@@ -114,29 +116,129 @@ nav {
     position: absolute;
 }*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+#jellyfish_adult_mini_container {
+    transform: rotate(20deg);
+}
+#jellyfish_adult_mini_sprite {
+    background-image: url(svg/jellyfish_adult_large.svg);
+    width: 20.5vw;
+    height: 17.5vw;
+    background-size: cover;
+    position: absolute;
+    top: 87vw;
+    left: 35vw;
+}
+
+
+#jellyfish_adult_small_container {
+    transform: rotate(20deg);
+}
+#jellyfish_adult_small_sprite {
+    background-image: url(svg/jellyfish_adult_large.svg);
+    width: 27.5vw;
+    height: 23.5vw;
+    background-size: cover;
+    position: absolute;
+    top: 28vw;
+    left: 10vw;
+}
+
+
+
+#jellyfish_adult_medium_container {
+    transform: rotate(20deg);
+}
+#jellyfish_adult_medium_sprite {
+    background-image: url(svg/jellyfish_adult_large.svg);
+    width: 31.7vw;
+    height: 27.3vw;
+    background-size: cover;
+    position: absolute;
+    top: 51vw;
+    left: 77vw;
+
+
+
+}
+
+
 #jellyfish_adult_large_sprite {
     background-image: url(svg/jellyfish_adult_large.svg);
     width: 44.7vw;
     height: 38.3vw;
     background-size: cover;
-    position: absolute;
-
+    /*position: absolute;*/
+    position: relative;
     top: 10vw;
     left: 56vw;
-
-
-
 }
-
 #jellyfish_adult_large_container {
     transform: rotate(20deg);
 }
 
+#jellyfish_baby_small_sprite {
+    background-image: url(svg/jellyfish_baby_small.svg);
+    width: 13.7vw;
+    height: 12.3vw;
+    background-size: cover;
+    position: absolute;
+    top: 107vw;
+    left: 61vw;
+}
+
+#jellyfish_baby_small_container {
+    transform: rotate(20deg);
+}
+
+
+#jellyfish_baby_medium_sprite {
+    background-image: url(svg/jellyfish_baby_small.svg);
+    width: 19.7vw;
+    height: 18.3vw;
+    background-size: cover;
+    position: absolute;
+    top: 82vw;
+    left: 100vw;
+}
+
+#jellyfish_baby_medium_container {
+    transform: rotate(20deg);
+}
+
+#jellyfish_baby_large_sprite {
+    background-image: url(svg/jellyfish_baby_small.svg);
+    width: 23.7vw;
+    height: 21.9vw;
+    background-size: cover;
+    position: absolute;
+    top: 52vw;
+    left: 44vw;
+}
+
+#jellyfish_baby_large_container {
+    transform: rotate(20deg);
+}
+
+
+
 
 /*transform tingene*/
 
-.bounce-7 {
-    animation-name: bounce-7;
+.bounce {
+    animation-name: bounce;
     animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
 
     align-self: flex-end;
@@ -144,7 +246,7 @@ nav {
     animation-iteration-count: infinite;
 }
 
-@keyframes bounce-7 {
+@keyframes bounce {
     0% {
         transform: scale(1, 1) translateY(0);
     }
@@ -189,6 +291,7 @@ nav {
         /*border: 0px solid white;*/
         /*padding: 50px;*/
         margin: 7px;
+        z-index: 1;
     }
 
     .nav_ul.show {
