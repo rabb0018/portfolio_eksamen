@@ -1,3 +1,5 @@
+/****************************Overordnet*******************************/
+
 img {
     width: 100%;
 }
@@ -7,8 +9,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-
-
+    background-color: #F8ECDE;
 }
 
 html {
@@ -16,22 +17,24 @@ html {
 }
 
 
-
-
-body {
-    background-image: url(img/water.jpg);
+#body {
     height: 100%;
-    -webkit-background-size: cover;
+   /* -webkit-background-size: cover;*/
     background-size: cover;
     background-position: center;
     position: relative;
+
+
+
+
+  /*  background: linear-gradient(0deg, rgba(0, 44, 184, 1) 0%, rgba(81, 143, 235, 1) 52%, rgba(136, 229, 246, 1) 100%);*/
     background-repeat: no-repeat;
 
-
-    background: linear-gradient(0deg, rgba(0, 44, 184, 1) 0%, rgba(81, 143, 235, 1) 52%, rgba(136, 229, 246, 1) 100%);
-    background-repeat: no-repeat;
-
+    /*background-image: linear-gradient(0deg, rgba(0,152,184,1) 0%, rgba(81,203,235,1) 50%, rgba(136,229,246,1) 100%);*/
+    /*filter: brightness(75%);*/
 }
+
+
 
 /*background: rgb(0, 44, 184);*/
 
@@ -39,15 +42,17 @@ body {
      overflow: hidden;
 }
 
+
+
+/***************************************Navigation og burger************************************/
+
 nav {
     display: flex;
     /*align-items: center;
     justify-content:center;*/
     padding: 15px;
     /*float: right;*/
-
-    flex-wrap: wrap;
-
+    /*flex-wrap: wrap;*/
 }
 
 .nav_ul {
@@ -61,8 +66,8 @@ nav {
 
 .nav_ul li a {
     display: inline-block;
-    color: #fff;
-    font-family: sans-serif;
+    color: #000000;
+    /*font-family: sans-serif;*/
     padding: 10px 20px;
     text-decoration: none;
 }
@@ -71,19 +76,46 @@ nav {
 .hamburger {
     background-color: transparent;
     border: 0;
-    color: #DE7BBC;
+    color: #000000;
     font-size: 20px;
     cursor: pointer;
     display: none;
 }
 
+.fa {
+    font-size: 40px;
+}
 
 
+/*header {
+    position: relative;
+    height: 0;
+
+}*/
+
+nav {
+
+    padding: 1rem;
+    background: #F8ECDE;
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.2rem;
+    /*flex-direction: column;*/
+    text-align: left;
+    display: flex;
 
 
+}
 
 
+/*footer {
+    padding: 1.5rem;
+    background: white;
+    color: #000000;
+}*/
 
+
+/*******************************Forside indhold************************************/
 
 .portfolio_forside,
 .tekst_forside {
@@ -101,15 +133,6 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-
 /*#animation_elements {
     width: 100%;
     height:100%;
@@ -117,19 +140,9 @@ nav {
 }*/
 
 
+/*************************************Jellyfish****************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-#jellyfish_adult_mini_container {
+/*#jellyfish_adult_mini_container {
     transform: rotate(20deg);
 }
 #jellyfish_adult_mini_sprite {
@@ -169,27 +182,24 @@ nav {
     position: absolute;
     top: 51vw;
     left: 77vw;
-
-
-
-}
+}*/
 
 
 #jellyfish_adult_large_sprite {
     background-image: url(svg/jellyfish_adult_large.svg);
-    width: 44.7vw;
-    height: 38.3vw;
+    width: 18.7vw;
+    height: 16vw;
     background-size: cover;
     /*position: absolute;*/
     position: relative;
-    top: 10vw;
-    left: 56vw;
+    top: 21vw;
+    left: 66vw;
 }
 #jellyfish_adult_large_container {
-    transform: rotate(20deg);
+    transform: rotate(-32deg);
 }
 
-#jellyfish_baby_small_sprite {
+/*#jellyfish_baby_small_sprite {
     background-image: url(svg/jellyfish_baby_small.svg);
     width: 13.7vw;
     height: 12.3vw;
@@ -198,7 +208,6 @@ nav {
     top: 107vw;
     left: 61vw;
 }
-
 #jellyfish_baby_small_container {
     transform: rotate(20deg);
 }
@@ -213,19 +222,18 @@ nav {
     top: 82vw;
     left: 100vw;
 }
-
 #jellyfish_baby_medium_container {
     transform: rotate(20deg);
-}
+}*/
 
 #jellyfish_baby_large_sprite {
     background-image: url(svg/jellyfish_baby_small.svg);
-    width: 23.7vw;
-    height: 21.9vw;
+    width: 8.7vw;
+    height: 8.05vw;
     background-size: cover;
     position: absolute;
-    top: 52vw;
-    left: 44vw;
+    top: 30vw;
+    left: 21vw;
 }
 
 #jellyfish_baby_large_container {
@@ -233,9 +241,12 @@ nav {
 }
 
 
+.delay {
+    animation-delay: 0.5s;
+}
 
 
-/*transform tingene*/
+/**********************************************animation********************************************/
 
 .bounce {
     animation-name: bounce;
@@ -276,22 +287,27 @@ nav {
     }
 }
 
+/******************************************Mediaqueries**********************************/
+/*****************************Mobil version**********************************************/
 
-
-
-
-
-@media screen and (max-width:700px) {
+@media screen and (max-width:600px) {
     .nav_ul {
         display: none;
         flex-direction: column;
-        width: 110px;
+        width: 140px;
         position: absolute;
-        background: linear-gradient(0deg, rgba(136,229,246,1) 0%, rgba(81,143,235,1) 52%, rgba(0,44,184,1) 100%);
+        background: #F8ECDE;
+
+/*linear-gradient(0deg, rgba(136,229,246,1) 0%, rgba(81,143,235,1) 52%, rgba(0,44,184,1) 100%);*/
         /*border: 0px solid white;*/
         /*padding: 50px;*/
-        margin: 7px;
+        margin: 25px;
         z-index: 1;
+        border: solid black 1px;
+    }
+
+    li {
+        border: solid black 1px;
     }
 
     .nav_ul.show {
@@ -312,26 +328,6 @@ nav {
 }*/
 
 
-
-
-
-/*#title_ani {
-
-
-    background-position: 25% 10%;
-    background-position: center center;
-
-    width: 100%;
-    height: 100vh;
-    background-image: url(img/water.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-
-
-}*/
-
-
 /*h2 {
     overflow: auto;
 }*/
@@ -339,29 +335,4 @@ nav {
 /*måske skifte til nav? ser på det. */
 
 
-/*header {
-    position: relative;
-    height: 0;
 
-}*/
-
-/*nav {
-
-    padding: 2.7rem;
-    background: #8FCDF7;
-    color: #fff;
-    font-weight: 400;
-    font-size: 1rem;
-    flex-direction: column;
-    text-align: left;
-    display: flex;
-
-
-}*/
-
-
-/*footer {
-    padding: 1.5rem;
-    background: #8FCDF7;
-    color: #fff;
-}*/
