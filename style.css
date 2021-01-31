@@ -53,10 +53,31 @@ html {
 
 /*background: rgb(0, 44, 184);*/
 
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.69);
+    border-radius: 50px;
+}
+
+
 #body {
     overflow: hidden;
 }
 
+
+h2 {
+    font-size: 2.4rem;
+    font-family: 'Old Standard TT', serif;
+    margin-top: 45px;
+    padding: 40px 30px 0;
+    margin-bottom: 0;
+}
+
+p {
+    padding: 40px 30px;
+    margin: 0;
+}
 
 
 /***************************************Navigation og burger************************************/
@@ -65,10 +86,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding: 15px;
+    /*padding: 15px;*/
     /*float: right;*/
     /*flex-wrap: wrap;*/
     flex-direction: row;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top:10px;
 }
 
 .nav_ul {
@@ -85,7 +109,9 @@ nav {
     display: inline-block;
     color: #000000;
     font-family: 'Old Standard TT', serif;
-    padding: 10px 20px;
+    padding: 10px 0;
+    padding-right: 40px;
+
     text-decoration: none;
 }
 
@@ -112,7 +138,7 @@ nav {
 
 nav {
 
-    padding: 1rem;
+    /*padding: 1rem;*/
     background: #F8ECDE;
     color: #000000;
     font-weight: 400;
@@ -132,11 +158,10 @@ nav {
 }
 
 
-/*footer {
-    padding: 1.5rem;
-    background: white;
+footer {
+    padding: 2.5rem;
     color: #000000;
-}*/
+}
 
 
 /*******************************Forside indhold************************************/
@@ -153,12 +178,13 @@ nav {
 }
 
 .portfolio_forside {
-    font-size: 6rem;
+    font-size: 7rem;
     font-family: 'Parisienne', cursive;
     margin-top: 40px;
 
     margin-bottom: 0;
     text-align: center;
+    font-weight: initial;
 
 }
 
@@ -168,12 +194,13 @@ nav {
     margin-right: 380px;
 }
 
-.tekst_forside {
+.tekst_forside  {
     font-size: 1.5rem;
     font-family: 'Old Standard TT', serif;
    font-style: italic;
     margin-right: -380px;
     margin-top: 40px;
+    padding: 0;
 
 }
 
@@ -238,7 +265,7 @@ nav {
     /*position: absolute;*/
     position: relative;
     top: 4vw;
-    left: 11vw;
+    left: 1vw;
 }
 
 #jellyfish_adult_large_container {
@@ -278,8 +305,8 @@ nav {
     height: 7.12vw;
     background-size: cover;
     position: absolute;
-    top: -1vw;
-    left: 81vw;
+    top: 2vw;
+    left: 57vw;
 }
 
 #jellyfish_baby_large_container {
@@ -389,10 +416,6 @@ nav {
 }
 
 
-/*section {
-    max-width: 1200px;
-    margin: 0 auto;
-}*/
 
 
 /*h2 {
