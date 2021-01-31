@@ -1,3 +1,18 @@
+/*font-family: 'Allura', cursive;
+font-family: 'Electrolize', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Lemon', cursive;
+font-family: 'Mallanna', sans-serif;
+font-family: 'Old Standard TT', serif;
+font-family: 'Parisienne', cursive;
+font-family: 'Rokkitt', serif;
+font-family: 'Rouge Script', cursive;
+font-family: 'Sarina', cursive;
+font-family: 'Yellowtail', cursive;
+font-family: 'Yesteryear', cursive;*/
+
+
+
 /****************************Overordnet*******************************/
 
 img {
@@ -19,7 +34,7 @@ html {
 
 #body {
     height: 100%;
-   /* -webkit-background-size: cover;*/
+    /* -webkit-background-size: cover;*/
     background-size: cover;
     background-position: center;
     position: relative;
@@ -27,7 +42,7 @@ html {
 
 
 
-  /*  background: linear-gradient(0deg, rgba(0, 44, 184, 1) 0%, rgba(81, 143, 235, 1) 52%, rgba(136, 229, 246, 1) 100%);*/
+    /*  background: linear-gradient(0deg, rgba(0, 44, 184, 1) 0%, rgba(81, 143, 235, 1) 52%, rgba(136, 229, 246, 1) 100%);*/
     background-repeat: no-repeat;
 
     /*background-image: linear-gradient(0deg, rgba(0,152,184,1) 0%, rgba(81,203,235,1) 50%, rgba(136,229,246,1) 100%);*/
@@ -39,7 +54,7 @@ html {
 /*background: rgb(0, 44, 184);*/
 
 #body {
-     overflow: hidden;
+    overflow: hidden;
 }
 
 
@@ -48,11 +63,12 @@ html {
 
 nav {
     display: flex;
-    /*align-items: center;
-    justify-content:center;*/
+    align-items: center;
+    justify-content:space-between;
     padding: 15px;
     /*float: right;*/
     /*flex-wrap: wrap;*/
+    flex-direction: row;
 }
 
 .nav_ul {
@@ -61,13 +77,14 @@ nav {
     justify-content: center;*/
     padding: 0;
     list-style-type: none;
+    margin: 0;
 
 }
 
 .nav_ul li a {
     display: inline-block;
     color: #000000;
-    /*font-family: sans-serif;*/
+    font-family: 'Old Standard TT', serif;
     padding: 10px 20px;
     text-decoration: none;
 }
@@ -103,8 +120,15 @@ nav {
     /*flex-direction: column;*/
     text-align: left;
     display: flex;
+    position:relative;
 
 
+}
+
+.logo {
+    width: 180px;
+    /*height: 100px;*/
+    /*display: block;*/
 }
 
 
@@ -117,20 +141,41 @@ nav {
 
 /*******************************Forside indhold************************************/
 
-.portfolio_forside,
-.tekst_forside {
-    text-align: center;
-}
+
 
 
 .portfolio_tekst {
 
-    margin-top: 5rem;
+    margin-top: 10rem;
+    text-align: center;
+
 
 }
 
+.portfolio_forside {
+    font-size: 6rem;
+    font-family: 'Parisienne', cursive;
+    margin-top: 40px;
 
+    margin-bottom: 0;
+    text-align: center;
 
+}
+
+.semester {
+    font-size: 1.5rem;
+    font-family: 'Old Standard TT', serif;
+    margin-right: 380px;
+}
+
+.tekst_forside {
+    font-size: 1.5rem;
+    font-family: 'Old Standard TT', serif;
+   font-style: italic;
+    margin-right: -380px;
+    margin-top: 40px;
+
+}
 
 
 /*#animation_elements {
@@ -187,16 +232,17 @@ nav {
 
 #jellyfish_adult_large_sprite {
     background-image: url(svg/jellyfish_adult_large.svg);
-    width: 18.7vw;
-    height: 16vw;
+    width: 16.35vw;
+    height: 14vw;
     background-size: cover;
     /*position: absolute;*/
     position: relative;
-    top: 21vw;
-    left: 66vw;
+    top: 4vw;
+    left: 11vw;
 }
+
 #jellyfish_adult_large_container {
-    transform: rotate(-32deg);
+    transform: rotate(20deg);
 }
 
 /*#jellyfish_baby_small_sprite {
@@ -228,16 +274,16 @@ nav {
 
 #jellyfish_baby_large_sprite {
     background-image: url(svg/jellyfish_baby_small.svg);
-    width: 8.7vw;
-    height: 8.05vw;
+    width: 7.7vw;
+    height: 7.12vw;
     background-size: cover;
     position: absolute;
-    top: 30vw;
-    left: 21vw;
+    top: -1vw;
+    left: 81vw;
 }
 
 #jellyfish_baby_large_container {
-    transform: rotate(20deg);
+    transform: rotate(-32deg);
 }
 
 
@@ -290,7 +336,7 @@ nav {
 /******************************************Mediaqueries**********************************/
 /*****************************Mobil version**********************************************/
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .nav_ul {
         display: none;
         flex-direction: column;
@@ -298,10 +344,11 @@ nav {
         position: absolute;
         background: #F8ECDE;
 
-/*linear-gradient(0deg, rgba(136,229,246,1) 0%, rgba(81,143,235,1) 52%, rgba(0,44,184,1) 100%);*/
+        /*linear-gradient(0deg, rgba(136,229,246,1) 0%, rgba(81,143,235,1) 52%, rgba(0,44,184,1) 100%);*/
         /*border: 0px solid white;*/
         /*padding: 50px;*/
-        margin: 25px;
+         margin-top: 300px;
+    margin-left: 26px;
         z-index: 1;
         border: solid black 1px;
     }
@@ -318,8 +365,28 @@ nav {
     .hamburger {
         display: block;
     }
+
+    .logo {
+    width: 180px;
+    /*height: 100px;*/
+    /*display: block;*/
+        align-items: center;
+        display: block;
+}
 }
 
+
+@media screen and (max-width:400px){
+
+    nav {
+        justify-content: initial;
+    }
+
+    .logo {
+        margin-left: 14.5vw;
+    }
+
+}
 
 
 /*section {
@@ -333,6 +400,3 @@ nav {
 }*/
 
 /*måske skifte til nav? ser på det. */
-
-
-
