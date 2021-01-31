@@ -72,11 +72,24 @@ h2 {
     margin-top: 45px;
     padding: 40px 30px 0;
     margin-bottom: 0;
+    text-align: center;
 }
 
+
+
+h3 {
+    font-size: 1.7rem;
+    font-family: 'Old Standard TT', serif;
+    margin-top: 0;
+    padding: 40px 30px 0;
+    margin-bottom: 0;
+}
+
+
 p {
-    padding: 40px 30px;
+    padding: 10px 30px;
     margin: 0;
+    padding-bottom: 20px;
 }
 
 
@@ -359,6 +372,31 @@ footer {
         transform: scale(1, 1) translateY(0);
     }
 }
+
+
+
+
+
+.web_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  /*  grid-gap: 10px;*/
+}
+
+
+
+.tekst_02_04_02 {
+    grid-column: 1/2;
+
+}
+
+.billede_02_04_02 {
+    grid-column: 2/3;
+    padding: 10px 30px;
+}
+
+
+
 
 /******************************************Mediaqueries**********************************/
 /*****************************Mobil version**********************************************/
