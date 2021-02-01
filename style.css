@@ -16,12 +16,14 @@ font-family: 'Yesteryear', cursive;*/
 /****************************Overordnet*******************************/
 
 img {
-    width: 100%;
-}
+        width: 100%;
+    }
 
 
 body {
     margin: 0;
+    margin-right: 10px;
+    margin-left: 10px;
     padding: 0;
     height: 100%;
     background-color: #F8ECDE;
@@ -64,6 +66,7 @@ section {
 
 #body {
     overflow: hidden;
+
 }
 
 main {
@@ -421,6 +424,18 @@ p.footer_tekst {
 /*****************************Mobil version**********************************************/
 
 @media screen and (max-width:800px) {
+
+
+
+    .web_wrapper {
+
+        display: initial;
+        grid-template-columns: none;
+
+    /*  grid-gap: 10px;*/
+}
+
+
     .nav_ul {
         display: none;
         flex-direction: column;
@@ -493,62 +508,69 @@ p.footer_tekst {
     }
 
 
-    @media screen and (max-width:400px) {
-
-        nav {
-            justify-content: initial;
-        }
-
-        .logo {
-            margin-left: 14.5vw;
-        }
 
 
-        .portfolio_tekst {
 
-            margin-top: 6rem;
-            text-align: center;
+}
 
 
-        }
 
-        .portfolio_forside {
-            font-size: 16vw;
-            margin-top: 90px;
+@media screen and (max-width:400px) {
 
-        }
+    nav {
+        justify-content: initial;
+    }
 
-        .semester {
-            font-size: 5vw;
-            margin-right: 0;
-            text-align: center;
-        }
-
-        .tekst_forside {
-            font-size: 5vw;
-            margin-top: 90px;
-            margin-right: 0;
-            text-align: center;
-        }
-
-        #jellyfish_baby_large_sprite {
-            top: -33vw;
-            left: 106vw;
-        }
-
-
-        #jellyfish_adult_large_sprite {
-            top: -11vw;
-            left: -2vw;
-        }
-
+    .logo {
+        margin-left: 14.5vw;
     }
 
 
+    .portfolio_tekst {
+
+        margin-top: 6rem;
+        text-align: center;
 
 
-    /*h2 {
+    }
+
+    .portfolio_forside {
+        font-size: 16vw;
+        margin-top: 90px;
+
+    }
+
+    .semester {
+        font-size: 5vw;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .tekst_forside {
+        font-size: 5vw;
+        margin-top: 90px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #jellyfish_baby_large_sprite {
+        top: -33vw;
+        left: 106vw;
+    }
+
+
+    #jellyfish_adult_large_sprite {
+        top: -11vw;
+        left: -2vw;
+    }
+
+}
+
+
+
+
+/*h2 {
     overflow: auto;
 }*/
 
-    /*måske skifte til nav? ser på det. */
+/*måske skifte til nav? ser på det. */
