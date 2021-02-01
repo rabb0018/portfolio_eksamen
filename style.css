@@ -98,14 +98,14 @@ p {
 nav {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     /*padding: 15px;*/
     /*float: right;*/
     /*flex-wrap: wrap;*/
     flex-direction: row;
     max-width: 1000px;
     margin: 0 auto;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .nav_ul {
@@ -159,7 +159,7 @@ nav {
     /*flex-direction: column;*/
     text-align: left;
     display: flex;
-    position:relative;
+    position: relative;
 
 
 }
@@ -207,10 +207,10 @@ footer {
     margin-right: 380px;
 }
 
-.tekst_forside  {
+.tekst_forside {
     font-size: 1.5rem;
     font-family: 'Old Standard TT', serif;
-   font-style: italic;
+    font-style: italic;
     margin-right: -380px;
     margin-top: 40px;
     padding: 0;
@@ -277,8 +277,8 @@ footer {
     background-size: cover;
     /*position: absolute;*/
     position: relative;
-    top: 4vw;
-    left: 1vw;
+    top: 3vw;
+    left: 8vw;
 }
 
 #jellyfish_adult_large_container {
@@ -318,8 +318,8 @@ footer {
     height: 7.12vw;
     background-size: cover;
     position: absolute;
-    top: 2vw;
-    left: 57vw;
+    top: 5vw;
+    left: 81vw;
 }
 
 #jellyfish_baby_large_container {
@@ -380,7 +380,7 @@ footer {
 .web_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  /*  grid-gap: 10px;*/
+    /*  grid-gap: 10px;*/
 }
 
 
@@ -412,8 +412,8 @@ footer {
         /*linear-gradient(0deg, rgba(136,229,246,1) 0%, rgba(81,143,235,1) 52%, rgba(0,44,184,1) 100%);*/
         /*border: 0px solid white;*/
         /*padding: 50px;*/
-         margin-top: 300px;
-    margin-left: 26px;
+        margin-top: 300px;
+        margin-left: 26px;
         z-index: 1;
         border: solid black 1px;
     }
@@ -432,32 +432,104 @@ footer {
     }
 
     .logo {
-    width: 180px;
-    /*height: 100px;*/
-    /*display: block;*/
+        width: 180px;
+        /*height: 100px;*/
+        /*display: block;*/
         align-items: center;
         display: block;
-}
-}
-
-
-@media screen and (max-width:400px){
-
-    nav {
-        justify-content: initial;
     }
 
-    .logo {
-        margin-left: 14.5vw;
+
+    #jellyfish_baby_large_sprite {
+        top: -8vw;
+        left: 93vw;
     }
 
-}
+
+    #jellyfish_adult_large_sprite {
+        top: 15vw;
+        left: 11vw;
+    }
 
 
 
 
-/*h2 {
+    .portfolio_forside {
+        font-size: 14vw;
+        margin-top: 40px;
+
+
+
+    }
+
+    .semester {
+        font-size: 3vw;
+        margin-right: 48vw;
+    }
+
+    .tekst_forside {
+        font-size: 3vw;
+        margin-top: 40px;
+        margin-right: -48vw;
+    }
+
+
+    @media screen and (max-width:400px) {
+
+        nav {
+            justify-content: initial;
+        }
+
+        .logo {
+            margin-left: 14.5vw;
+        }
+
+
+        .portfolio_tekst {
+
+            margin-top: 6rem;
+            text-align: center;
+
+
+        }
+
+        .portfolio_forside {
+            font-size: 16vw;
+            margin-top: 90px;
+
+        }
+
+        .semester {
+            font-size: 5vw;
+            margin-right: 0;
+            text-align: center;
+        }
+
+        .tekst_forside {
+            font-size: 5vw;
+            margin-top: 90px;
+            margin-right: 0;
+            text-align: center;
+        }
+
+        #jellyfish_baby_large_sprite {
+            top: -33vw;
+            left: 106vw;
+        }
+
+
+        #jellyfish_adult_large_sprite {
+            top: -11vw;
+            left: -2vw;
+        }
+
+    }
+
+
+
+
+    /*h2 {
     overflow: auto;
 }*/
 
-/*måske skifte til nav? ser på det. */
+    /*måske skifte til nav? ser på det. */
