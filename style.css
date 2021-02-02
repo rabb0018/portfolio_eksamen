@@ -98,6 +98,8 @@ p {
     padding: 10px 30px;
     margin: 0;
     padding-bottom: 20px;
+     font-family: 'Old Standard TT', serif;
+    font-size: 1.1rem;
 }
 
 
@@ -487,6 +489,26 @@ p.footer_tekst {
 
 
 
+
+.column4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.billede_05_01_01 {
+    padding: 10px 30px;
+}
+
+.billede_05_03_01 {
+    padding: 10px 30px;
+
+}
+
 /******************************************Mediaqueries**********************************/
 /*****************************Mobil version**********************************************/
 
@@ -609,6 +631,17 @@ p.footer_tekst {
             display: initial;
             grid-template-columns: none;
         }
+
+
+        .column4 {
+            display: initial;
+            grid-template-columns: none;
+        }
+
+        .column5 {
+            display: initial;
+            grid-template-columns: none;
+        }
     }
 
 
@@ -622,6 +655,10 @@ p.footer_tekst {
     h3 {
         font-size: 1.3rem;
     }
+
+    p{
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -631,7 +668,7 @@ p.footer_tekst {
     }
 
     .logo {
-        margin-left: 14.5vw;
+        margin-left: 7.5vw;
     }
 
 
@@ -677,11 +714,15 @@ p.footer_tekst {
 
 @media screen and (max-width:450px) {
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
     }
 
     h3 {
-        font-size: 1rem;
+        font-size: 1.1rem;
+    }
+
+    p{
+        font-size: 0.95rem;
     }
 }
 
