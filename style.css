@@ -55,6 +55,16 @@ html {
 
 /*background: rgb(0, 44, 184);*/
 
+#jellyfish_adult_medium_sprite {
+    background-image: url(svg/jellyfish_adult_large.svg);
+    width: 16.35vw;
+    height: 14vw;
+    background-size: cover;
+    position: absolute;
+    top: 29vw;
+    left: 41vw;
+}
+
 section {
     max-width: 1000px;
     margin: 0 auto;
@@ -276,22 +286,22 @@ p.footer_tekst {
     position: absolute;
     top: 28vw;
     left: 10vw;
-}
+}*/
 
 
 
-#jellyfish_adult_medium_container {
+/*#jellyfish_adult_medium_container {
     transform: rotate(20deg);
-}
+}*/
 #jellyfish_adult_medium_sprite {
     background-image: url(svg/jellyfish_adult_large.svg);
-    width: 31.7vw;
-    height: 27.3vw;
+    width: 16.35vw;
+    height: 14vw;
     background-size: cover;
-    position: absolute;
-    top: 51vw;
-    left: 77vw;
-}*/
+    position: relative;
+    top: 29vw;
+    left: 41vw;
+}
 
 
 #jellyfish_adult_large_sprite {
