@@ -596,10 +596,13 @@ p.footer_tekst {
         border-radius: 50px;*/
     }
 
+
+
     li {
-        border: solid black 1px;
+        border: solid black 1.5px;
         border-radius: 50px;
-        background: rgb(248, 236, 222);/*rgb(255, 255, 255);*/
+        background: #fdf9f5;/*rgb(255, 255, 255);*/
+
     }
 
     .nav_ul.show {
