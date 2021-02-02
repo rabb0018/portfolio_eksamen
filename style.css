@@ -53,17 +53,19 @@ html {
 
 
 
+
+
+/* mouse over link */
+.nav_ul li a:hover {
+    text-decoration: underline;
+
+}
+
+
+
 /*background: rgb(0, 44, 184);*/
 
-#jellyfish_adult_medium_sprite {
-    background-image: url(svg/jellyfish_adult_large.svg);
-    width: 16.35vw;
-    height: 14vw;
-    background-size: cover;
-    position: absolute;
-    top: 29vw;
-    left: 41vw;
-}
+
 
 section {
     max-width: 1000px;
@@ -145,7 +147,7 @@ nav {
     font-family: 'Old Standard TT', serif;
     padding: 10px 0;
     padding-right: 40px;
-
+    padding-left: 20px;
     text-decoration: none;
 }
 
@@ -293,6 +295,19 @@ p.footer_tekst {
 /*#jellyfish_adult_medium_container {
     transform: rotate(20deg);
 }*/
+
+
+/*#jellyfish_adult_medium_sprite {
+    background-image: url(svg/jellyfish_adult_large.svg);
+    width: 16.35vw;
+    height: 14vw;
+    background-size: cover;
+    position: absolute;
+    top: 29vw;
+    left: 41vw;
+}*/
+
+
 #jellyfish_adult_medium_sprite {
     background-image: url(svg/jellyfish_adult_large.svg);
     width: 16.35vw;
@@ -557,13 +572,19 @@ p.footer_tekst {
         /*  grid-gap: 10px;*/
     }
 
+.nav_ul li a:hover {
+    text-decoration: underline;
+
+
+}
+
 
     .nav_ul {
         display: none;
         flex-direction: column;
-        width: 140px;
+        width: 130px;
         position: absolute;
-        background: #F8ECDE;
+
 
         /*linear-gradient(0deg, rgba(136,229,246,1) 0%, rgba(81,143,235,1) 52%, rgba(0,44,184,1) 100%);*/
         /*border: 0px solid white;*/
@@ -571,11 +592,14 @@ p.footer_tekst {
         margin-top: 300px;
         margin-left: 26px;
         z-index: 1;
-        border: solid black 1px;
+        /*border: solid black 1px;
+        border-radius: 50px;*/
     }
 
     li {
         border: solid black 1px;
+        border-radius: 50px;
+        background: rgb(248, 236, 222);/*rgb(255, 255, 255);*/
     }
 
     .nav_ul.show {
