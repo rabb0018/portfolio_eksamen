@@ -22,8 +22,8 @@ img {
 
 body {
     margin: 0;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
     padding: 0;
     height: 100%;
     background-color: #F8ECDE;
@@ -399,7 +399,7 @@ p.footer_tekst {
 
 
 
-.web_wrapper {
+.web_wrapper2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /*  grid-gap: 10px;*/
@@ -419,15 +419,81 @@ p.footer_tekst {
 
 
 
+.ux_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr;*/
+    grid-gap: 10px;
+
+}
+
+
+.column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+/*.tekst_03_01_05 {
+    padding: 10px 30px;
+}*/
+
+
+.billede_03_01_05 {
+    padding: 10px 30px;
+}
+
+/*.tekst_03_03_02 {
+    padding: 10px 30px;
+
+}*/
+
+.billede_03_03_02 {
+    padding: 10px 30px;
+}
+
+/*.tekst_03_03_03 {
+    padding: 10px 30px;
+}*/
+
+.billede_03_03_03 {
+    padding: 10px 30px;
+}
+
+
 
 /******************************************Mediaqueries**********************************/
 /*****************************Mobil version**********************************************/
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
+
+    .ux_wrapper {
+    display: initial;
+    grid-template-columns: none;
+
+}
+
+
+.column {
+
+     display: initial;
+    grid-template-columns: none;
+        flex-direction: none;
+        justify-content: none;
+
+    }
+}
 
 
 
-    .web_wrapper {
+
+
+@media screen and (max-width:850px) {
+
+
+
+    .web_wrapper2 {
 
         display: initial;
         grid-template-columns: none;
@@ -513,7 +579,15 @@ p.footer_tekst {
 
 }
 
+@media screen and (max-width:600px) {
+    h2 {
+        font-size: 1.8rem;
+    }
 
+    h3 {
+        font-size: 1.3rem;
+    }
+}
 
 @media screen and (max-width:400px) {
 
@@ -565,8 +639,15 @@ p.footer_tekst {
     }
 
 }
+@media screen and (max-width:450px) {
+    h2 {
+        font-size: 1.3rem;
+    }
 
-
+    h3 {
+        font-size: 1rem;
+    }
+}
 
 
 /*h2 {
