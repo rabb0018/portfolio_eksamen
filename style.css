@@ -16,8 +16,8 @@ font-family: 'Yesteryear', cursive;*/
 /****************************Overordnet*******************************/
 
 img {
-        width: 100%;
-    }
+    width: 100%;
+}
 
 
 body {
@@ -429,11 +429,11 @@ p.footer_tekst {
 
 
 .column {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    }
+}
 
 /*.tekst_03_01_05 {
     padding: 10px 30px;
@@ -463,22 +463,46 @@ p.footer_tekst {
 
 
 
+
+
+
+.column2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.billede_04_01_05 {
+    padding: 10px 30px;
+}
+
+.billede_04_05_01 {
+    padding: 10px 30px;
+}
+
+
+
 /******************************************Mediaqueries**********************************/
 /*****************************Mobil version**********************************************/
 
 @media screen and (max-width:900px) {
 
     .ux_wrapper {
-    display: initial;
-    grid-template-columns: none;
+        display: initial;
+        grid-template-columns: none;
 
-}
+    }
 
 
-.column {
+    .column {
 
-     display: initial;
-    grid-template-columns: none;
+        display: initial;
+        grid-template-columns: none;
         flex-direction: none;
         justify-content: none;
 
@@ -498,8 +522,8 @@ p.footer_tekst {
         display: initial;
         grid-template-columns: none;
 
-    /*  grid-gap: 10px;*/
-}
+        /*  grid-gap: 10px;*/
+    }
 
 
     .nav_ul {
@@ -574,7 +598,18 @@ p.footer_tekst {
     }
 
 
+    @media screen and (max-width:700px) {
 
+        .column2 {
+            display: initial;
+            grid-template-columns: none;
+        }
+
+        .column3 {
+            display: initial;
+            grid-template-columns: none;
+        }
+    }
 
 
 }
@@ -639,6 +674,7 @@ p.footer_tekst {
     }
 
 }
+
 @media screen and (max-width:450px) {
     h2 {
         font-size: 1.3rem;
