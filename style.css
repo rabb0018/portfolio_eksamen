@@ -147,7 +147,7 @@ nav {
     color: #000000;
     font-family: 'Old Standard TT', serif;
     padding: 10px 0;
-    padding-right: 40px;
+    padding-right: 20px;
     padding-left: 20px;
     text-decoration: none;
 }
@@ -427,6 +427,104 @@ p.footer_tekst {
 
 
 
+.btn {
+    /*position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);*/
+    background-color: #F8ECDE;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 30%;
+
+}
+
+.btn2 {
+    background-color: #F8ECDE;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 20%;
+}
+
+.btn3 {
+    background-color: #F8ECDE;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 23%;
+}
+
+.btn4 {
+    background-color: #F8ECDE;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 24%;
+}
+
+
+
+.btn5 {
+    background-color: #F8ECDE;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 25%;
+}
+
+.btn6 {
+    background-color: #F8ECDE;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 25%;
+}
+
+.btn7 {
+    background-color: #F8ECDE;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 25%;
+}
+
+.btn8 {
+    background-color: #F8ECDE;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 25%;
+}
+
+
+
 .web_wrapper2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -450,22 +548,7 @@ p.footer_tekst {
     position: relative;
 }*/
 
-.btn {
-    /*position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);*/
-    background-color: #F8ECDE;
-    color: black;
-    font-size: 16px;
-    padding: 16px 30px;
-    border: 2px solid black;
-    cursor: pointer;
-    border-radius: 25px;
-    margin-left: 30%;
 
-}
 
 
 .billede_02_04_02 .btn:hover {
@@ -586,6 +669,18 @@ p.footer_tekst {
         justify-content: none;
 
     }
+
+    .btn2 {
+         margin-left: 38%;
+    }
+
+    .btn3 {
+         margin-left: 38%;
+    }
+
+    .btn4 {
+         margin-left: 38%;
+    }
 }
 
 
@@ -609,6 +704,10 @@ p.footer_tekst {
 
 
     }
+    .nav_ul li a {
+        padding-right: 20px;
+    }
+
 
 
     .nav_ul {
@@ -717,6 +816,24 @@ p.footer_tekst {
     .btn {
         margin-left: 30vw;
     }
+
+
+    .btn5 {
+        margin-left: 30%;
+    }
+
+
+    .btn6 {
+        margin-left: 30%;
+    }
+
+    .btn7 {
+        margin-left: 30%;
+    }
+
+    .btn8 {
+        margin-left: 30%;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -730,6 +847,75 @@ p.footer_tekst {
 
     p {
         font-size: 1rem;
+    }
+
+    .btn2 {
+         margin-left: 32%;
+    }
+
+    .btn3 {
+         margin-left: 32%;
+    }
+
+    .btn4 {
+         margin-left: 32%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        font-size: 10px;
+        margin-left: 26%;
+    }
+
+     .btn2 {
+         margin-left: 26%;
+         font-size: 10px;
+    }
+
+    .btn3 {
+         margin-left: 26%;
+        font-size: 10px;
+    }
+
+    .btn4 {
+         margin-left: 26%;
+        font-size: 10px;
+    }
+
+    .btn5 {
+        margin-left: 26%;
+        font-size: 10px;
+    }
+
+
+    .btn6 {
+       margin-left: 26%;
+        font-size: 10px;
+    }
+
+
+    .btn7 {
+       margin-left: 26%;
+        font-size: 10px;
+    }
+
+
+    .btn8 {
+       margin-left: 26%;
+        font-size: 10px;
     }
 }
 
@@ -784,24 +970,7 @@ p.footer_tekst {
 
 }
 
-@media screen and (max-width:450px) {
-    h2 {
-        font-size: 1.35rem;
-    }
 
-    h3 {
-        font-size: 1.1rem;
-    }
-
-    p {
-        font-size: 0.95rem;
-    }
-
-    .btn {
-        font-size: 10px;
-        margin-left: 26%;
-    }
-}
 
 
 /*h2 {
