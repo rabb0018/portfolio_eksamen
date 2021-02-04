@@ -665,8 +665,8 @@ p.footer_tekst {
 
         display: initial;
         grid-template-columns: none;
-        flex-direction: none;
-        justify-content: none;
+        flex-direction: initial;
+        justify-content: initial;
 
     }
 
